@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    align-items: center;
+    background-color: #f6fafa;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0.5em;
+}
+
+header div {
+    min-width: 10%;
+    /* background-color: gray; */
+}
+
+header div a {
+    flex-basis: 47px;
+    display: block;
+    background-color: black;
+    margin-bottom: 1px;
+    padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+header div a:hover {
+    background-color: orange;
+}
+
+header h1 {
+    text-transform: capitalize;
+    /* font-size: 30%; */
+}
+
+header h1 span {
+    font-family: evernight;
+    color: darkblue;
+}
+
+@font-face {
+
+    font-family: evernight;
+    src: url(asset/fonts/Bulltoad\ W00\ Lucky.ttf);
+}
+
+header select {
+    width: 10%;
+    height: 2em;
+    border: none;
+
+}
+
+.html-section {
+    width: 100%;
+    height: 60%;
+    background-color: blue;
+}
+
+.html-section img {
+    width: 100%;
+    height: 60%;
+}
+
+.html {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#learn-html {
+    position: fixed;
+    top: 12em;
+    left: 0;
+    background-color: blue;
+    text-transform: uppercase;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 0 2em 0em 0;
+}
+
+#learn-html:hover {
+    color: orange;
+}
+
+.css-slogan {
+    display: flex;
+    flex-direction: column;
+}
+
+#html-learn-button a {
+    text-decoration: none;
+    display: block;
+
+}
+
+#learn-html:active {
+    color: red;
+}
+
+.css-slogan p,
+.html-slogan p {
+    font-size: 100%;
+    margin-left: 0.7em;
+    text-transform: capitalize;
+    width: 10em;
+    transform: rotate(-45deg);
+    animation-name: design;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+
+
+}
+
+.css-slogan button,
+.html-slogan button {
+    margin-top: 1em;
+    border: none;
+    border-radius: 1em;
+}
+.css-slogan button:hover,
+.html-slogan button:hover{
+    transform: scale(1.1);
+
+}
+.html-slogan a,
+.css-slogan a {
+    background-color: blue;
+    display: block;
+    margin: 1em 1em;
+    padding: 1em 2em;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.8em;
+}
+
+.html-slogan a:hover {
+    color: orange;
+   
+}
+
+
+.html-slogan a:active {
+    color: red;
+}
+
+@keyframes design {
+
+    from {
+        transform: rotate(10deg);
+    }
+
+    to {
+        transform: rotate(-10deg);
+    }
+
+}
+
+.html p span {
+    text-transform: uppercase;
+    color: hsl(0, 100%, 25%);
+    font-size: 1.2em;
+    font-family: evernight;
+
+
+
+}
+.liking-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+.liking-icons i{
+    font-size: 2em;
+ cursor: pointer;
+ color: blue;
+
+}
+.liking-icons i:hover{
+    animation-name: icons;
+    animation-duration: 0.3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+
+
+
+#css-picture {
+    border-radius: 2em;
+    box-shadow: 0 0 10px gray;
+}
+
+.html img {
+    width: 60%;
+    margin-top: 1em;
+    box-shadow: 0 0 10px gray;
+    /* animation-name: picture-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+@keyframes picture-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.css-slogan {
+    display: flex;
+    flex-direction: column;
+}
+
+.css-slogan h2 {
+    /* font-size: 5em; */
+    color: magenta;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: snow;
+    grid-column: 1/-1;
+    height: 9vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+
+}
+
+nav ul li a {
+    padding: 20px 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover {
+    background-color: rgb(234, 224, 224);
+    color: orange;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+nav ul li a:active {
+    color: red;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+body {
+    margin: 0;
+    position: relative;
+    /* height: 100em; */
+}
+
+
+
+
+
+
+
+#html-section {
+    width: 100%;
+    height: auto;
+    padding: 0 20em;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+
+
+}
+
+
+
+
+.html-root,
+.css-root {
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    border-radius: 2em;
+    /* box-shadow: 2px 0px 2px black; */
+    text-transform: uppercase;
+    font-family: al;
+
+}
+
+#css-section {
+    /* padding: 0 5em; */
+    width: 100%;
+    height: auto;
+    /* backgr */
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 5em; */
+}
+
+#css-section {
+    margin-bottom: 2em !important;
+}
+
+
+
+#html-head,
+#css-head {
+    text-align: center;
+    padding-top: 0.2em;
+    font-size: 6em;
+    position: relative;
+    letter-spacing: 10px;
+
+}
+
+
+#html-head::after {
+    content: ' hyperText markup     language';
+    font-size: 0.25em;
+    display: block;
+    text-transform: capitalize;
+    margin-top: -0.8em;
+    /* word-spacing: 10px; */
+    letter-spacing: 3px;
+    margin-left: 3em;
+
+}
+
+#css-head::after {
+    content: ' cascading style sheets';
+    font-size: 0.25em;
+    display: block;
+    text-transform: capitalize;
+    margin-top: -0.8em;
+    /* word-spacing: 10px; */
+    letter-spacing: 3px;
+    margin-left: 3em;
+
+}
+
+
+
+.html-content,
+.css-content {
+    width: 100%;
+    height: auto;
+    /* border-radius: 2em; */
+    padding: 0 5em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+.html-components {
+
+    background-color: white;
+    border-radius: 0 2em;
+    /* padding: 1em 0 0; */
+    text-transform: capitalize;
+    box-shadow: 0 0 0.5em black;
+
+    flex-basis: 15em;
+    text-align: center;
+    margin: 0 0.1em 3em 0.2em;
+    /* animation-name: card-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    transition: 1s;
+
+
+
+}
+
+.html-components:hover {
+
+    transform: scale(1.3);
+    box-shadow: 0 0 20px gray;
+    cursor: pointer;
+}
+
+.html-components button {
+    width: 100%;
+    margin-left: -0.1em;
+    background-color: blue;
+    text-transform: capitalize;
+    border-radius: 0 2em;
+    border: none;
+
+}
+
+.html-components button:hover {
+    box-shadow: 0 0 10px gray;
+}
+
+.html-components button a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 0.4em;
+}
+
+.html-components p {
+    letter-spacing: 2px;
+}
+
+.html-components h2 {
+    text-align: center;
+    height: 2em;
+    background-color: rgb(254, 240, 240);
+    border-radius: 0em 1em 0 0;
+    line-height: 2em;
+    /* margin-bottom: 20px; */
+    color: rgb(90, 90, 137);
+}
+
+
+
+/* h2 {
+
+    text-align: center;
+    padding-top: 0.4em;
+    background-color: white box-shadow: 2px 0 5px black;
+
+} */
+
+
+
+
+.basic a,
+.introduction a,
+.graphic a,
+.form a,
+.intermediate a {
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    /* margin-left: 0.1em; */
+
+
+}
+
+
+.basic a:hover,
+.introduction a:hover,
+.graphic a:hover,
+.form a:hover,
+.intermediate a:hover {
+    color: rgb(76, 179, 231);
+    font-weight: bold;
+
+
+}
+
+.basic a:active {
+    color: yellow;
+
+}
+
+
+
+.testimonail {
+
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: rgb(240, 239, 239);
+}
+
+.first,
+.second,
+.third {
+    width: 13em;
+    background-color: rgb(207, 233, 82);
+    padding: 0.3em;
+    margin-right: 1em;
+    transition: 1s;
+    border-radius: 1em;
+}
+
+.first:hover,
+.second:hover,
+.third:hover {
+    transform: scale(1.3, 1.3);
+}
+
+.first img,
+.second img,
+.third img {
+
+    width: 100%;
+    height: 10em;
+    border-radius: 1em;
+}
+
+.first h2,
+.second h2,
+.third h2 {
+    text-align: left;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    margin-bottom: 0.3em;
+}
+
+
+footer {
+    width: 100%;
+    height: 15em;
+    background-color: rgb(235, 241, 243);
+    box-shadow: 2px 2px 2px blue;
+
+    margin-top: 2em;
+
+
+}
+
+.genral {
+    font-size: 1.5em;
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.socail-media {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.media p {
+
+    margin-bottom: 1em;
+}
+
+.media {
+    margin-bottom: 0.1em;
+    display: flex;
+
+}
+
+.media a {
+    margin-left: 0.4em;
+    margin-top: 0.2em;
+    text-decoration: none;
+    color: black;
+}
+
+.media a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    color: bal;
+}
+
+.footer-content {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 0.5em 0 0.4em 0;
+    color: blue;
+}
+
+.sharif {
+    display: flex;
+    align-items: center;
+}
+
+.sharif img {
+    border-radius: 1em;
+    width: 40px;
+    margin-bottom: 0.3em;
+    border: 2px solo blue;
+}
+
+.sharif h4 {
+    margin-left: 0.5em;
+}
+
+.fa-brands:hover,
+.fa-sharp:hover,.fas:hover {
+    opacity: 0.5;
+    animation-name: icons;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+
+@keyframes icons {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: rotate(30deg);
+   
+    }
+    
+    100% {
+        /* font-size: 2em; */
+        transform: rotate(-30deg);
+    }
+
+
+}
